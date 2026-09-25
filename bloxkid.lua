@@ -84,19 +84,19 @@ if isfile and readfile then
                         end
                     end
                     merge(DEFAULT_CONFIG, result)
-                    print("[Lonely Hub] Đã nạp config từ " .. CONFIG_FILE)
+                    print("[DUCK Hub] Đã nạp config từ " .. CONFIG_FILE)
                 else
-                    warn("[Lonely Hub] Config file lỗi runtime, dùng default")
+                    warn("[DUCK Hub] Config file lỗi runtime, dùng default")
                 end
             else
-                warn("[Lonely Hub] Config file lỗi syntax: " .. tostring(err))
+                warn("[DUCK Hub] Config file lỗi syntax: " .. tostring(err))
             end
         end
     else
         -- Tạo file config mẫu nếu chưa có
         if writefile then
             local lines = {}
-            table.insert(lines, "-- Lonely Hub Config — sửa ở đây, source tự theo")
+            table.insert(lines, "-- DUCK Hub Config — sửa ở đây, source tự theo")
             table.insert(lines, "return {")
             table.insert(lines, '    Team = "Pirates",')
             table.insert(lines, "    Configuration = {")
@@ -160,7 +160,7 @@ if isfile and readfile then
             table.insert(lines, "    AutoRaidIce_TargetFragments = 5000,")
             table.insert(lines, "}")
             pcall(writefile, CONFIG_FILE, table.concat(lines, "\n"))
-            print("[Lonely Hub] Đã tạo " .. CONFIG_FILE .. " — sửa file rồi reload script")
+            print("[DUCK Hub] Đã tạo " .. CONFIG_FILE .. " — sửa file rồi reload script")
         end
     end
 end
@@ -897,7 +897,7 @@ function hoangtuveu()
     repeat task.wait() until game.CoreGui
 
     -- ============================================================
-    -- UI LONELY HUB (thay UI cũ — KHÔNG đụng logic)
+    -- UI DUCK HUB (thay UI cũ — KHÔNG đụng logic)
     -- ============================================================
     local CoreGui = game:GetService("CoreGui")
     local Lighting = game:GetService("Lighting")
@@ -1017,7 +1017,7 @@ function hoangtuveu()
     FragLabel = mkLabel("FragLabel", UDim2.new(0.07, 0, 0.65, 0), "Frag: N/A")
     CursedDualKatanaLabel = mkLabel("CursedDualKatanaLabel", UDim2.new(0.40, 0, 0.80, 0), utf8.char(0x1F534) .. " Cursed Dual Katana")
 
-    TopTitle = mkLabel("Top", UDim2.new(0.5, 0, 0.05, 0), "Lonely Stats Checker")
+    TopTitle = mkLabel("Top", UDim2.new(0.5, 0, 0.05, 0), "DUCK hub Stats Checker")
     TopTitle.BackgroundTransparency = 0.999
     TopTitle.TextXAlignment = Enum.TextXAlignment.Center
 
@@ -1128,7 +1128,7 @@ function hoangtuveu()
     DiscordLabel.Position = UDim2.new(0.5, 0, -0.025, 0)
     DiscordLabel.Size = UDim2.new(0, 210, 0, 50)
     DiscordLabel.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-    DiscordLabel.Text = "discord.gg/ZH7qdJMvR"
+    DiscordLabel.Text = "discord.gg/gk4EM7CVEp"
     DiscordLabel.TextColor3 = Color3.fromRGB(255, 200, 0)
     DiscordLabel.TextSize = 16
 
