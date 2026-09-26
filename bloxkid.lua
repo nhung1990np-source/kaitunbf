@@ -1050,7 +1050,7 @@ function hoangtuveu()
     DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
     DropShadow.Size = UDim2.new(1, 47, 1, 47)
     DropShadow.ZIndex = 0
-    DropShadow.Image = "rbxassetid://6015897843"
+    DropShadow.Image = "rbxassetid://140481106580711"
     DropShadow.ImageTransparency = 0.25
     DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -1076,7 +1076,7 @@ function hoangtuveu()
     DropShadow2.BackgroundTransparency = 1
     DropShadow2.Position = UDim2.new(0.5, 0, 0.35, 0)
     DropShadow2.Size = UDim2.new(1, 47, 1, 47)
-    DropShadow2.Image = "rbxassetid://6015897843"
+    DropShadow2.Image = "rbxassetid://140481106580711"
     DropShadow2.ImageColor3 = Color3.fromRGB(0, 0, 0)
     DropShadow2.ImageTransparency = 0.5
     DropShadow2.ScaleType = Enum.ScaleType.Slice
@@ -1173,7 +1173,7 @@ function hoangtuveu()
     ImageLabel.BackgroundTransparency = 1
     ImageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
     ImageLabel.Size = UDim2.new(0, 40, 0, 40)
-    ImageLabel.Image = "rbxassetid://112485471724320"
+    ImageLabel.Image = "rbxassetid://140481106580711"
 
     TextButton.Parent = dutdit
     TextButton.BackgroundTransparency = 1
